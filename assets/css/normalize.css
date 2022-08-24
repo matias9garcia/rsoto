@@ -431,3 +431,15 @@
       align-items: center;
     }
 
+    .publishers-logo {
+      width:  300px;
+      height: auto;
+      object-fit: cover;
+      padding: 1em;
+    }
+
+    .publishers-logo:hover {
+      opacity: 50%;
+      transition: opacity 0.75s;
+    }
+
