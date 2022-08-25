@@ -17,6 +17,13 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0;
+  // document.body.scrollTop = 0;
+
+    // element which needs to be scrolled to
+  var element = document.querySelector("#rsoto-brand");
+
+  // scroll to element
+  element.scrollIntoView();
+
   document.documentElement.scrollTop = 0;
 }
