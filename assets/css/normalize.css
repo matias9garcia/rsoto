@@ -379,10 +379,7 @@
     }
 
     .container {
-        width: 800px;
-        max-width: none !important;
-        margin-right: auto;
-        margin-left: auto;
+        margin: auto;
     }
 
     a {
