@@ -471,6 +471,20 @@
       background-color: #555;
     }
 
+    footer {
+      text-align: center;
+      padding: 3px;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      background-color: rgb(98, 158, 182);
+      color: white;
+      display: block;
+    }
+
+    footer a{
+      color: black;
+    }
+
     /**
    * fade in back to top btn
    */
