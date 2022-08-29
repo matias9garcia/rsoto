@@ -485,6 +485,10 @@
       color: black;
     }
 
+    summary{
+      padding: 1em;
+    }
+
     /**
    * fade in back to top btn
    */
