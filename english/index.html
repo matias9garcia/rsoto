@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Ricardo Soto's Home</title>
+        <title>Ricardo Soto</title>
+
+        <!-- Page icon apple -->
+        <link rel="icon" type="image/x-icon" href="assets\img\favicon.ico">
 
         <!-- Styles -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link href="../assets/css/normalize.css" rel="stylesheet">
-        <link href="../assets/css/font-style.css" rel="stylesheet">
-        
+        <link href="assets/css/normalize.css" rel="stylesheet">
+        <link href="assets/css/font-style.css" rel="stylesheet">
 
+        <!-- Bootstrap icons -->
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'> 
+        
     </head>
     <body class="antialiased">
 
-        <!-- Fixed navbar --> 
-             
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Fixed navbar -->     
+        <nav class="navbar navbar-expand-lg navbar-light bg-light center">
             <div class="container">
-                <a class="navbar-brand" href="#">Ricardo Soto</a>
+                <a id="rsoto-brand" class="navbar-brand" href="">Ricardo Soto</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,50 +32,57 @@
                   <ul class="navbar-nav mr-auto">
                     
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home</a>
+                      <a class="nav-link hide-collapse" href="#">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Teaching
+                          Cursos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Curso1</a>
-                          <a class="dropdown-item" href="#">Curso2</a>
+                          <a class="dropdown-item hide-collapse" href="#">Curso1</a>
+                          <a class="dropdown-item hide-collapse" href="#">Curso2</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item hide-collapse" href="https://nave13.ucv.cl/">Aula virtual PUCV</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#seccion-estudiantes">Students</a>
+                        <a class="nav-link hide-collapse" href="#seccion-estudiantes">Alumnos</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Research
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Investigación
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#seccion-publicaciones">Publications</a>
-                          <a class="dropdown-item" href="#seccion-proyectos">Projects</a>
+                          <a class="dropdown-item hide-collapse" href="#seccion-publicaciones">Publicaciones</a>
+                          <a class="dropdown-item hide-collapse" href="#seccion-proyectos">Proyectos</a>
                         </div>
                     </li>
                     
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link hide-collapse" href="#seccion-contacto">Contacto</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Language
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="../index.html">Español</a>
-                          <a class="dropdown-item" href="index.html">English</a>
-                        </div>
-                      </li>
+
+                    <li>
+                      <table width="400px"></table>
+                    </li>
+                    
+                    <li class="nav-item dropdown" id="nav-item-idiomas">
+                      
+                      <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Language">
+                          <i id="translate-icon" class='bi bi-translate'></i>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">Español</a>
+                        <a class="dropdown-item" href="./english/index.html">English</a>
+                      </div>
+                    </li>
+
                   </ul>
                   
                 </div>
             </div>
             
-          </nav>
+        </nav>
         <!-- end of Fixed navbar -->
 
         <!-- page content -->
@@ -86,80 +97,240 @@
             <br>
 
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-7">
-                    <img src="https://cdn.discordapp.com/attachments/454085077568192515/1004522677639323688/rsoto.jpg" class="col-md-12 col-sm-12 col-xs-12" title="rsoto profile pic">
-                  <p class="text-center"><a href="http://lucasjanson.fas.harvard.edu/Lucas_Janson_CV.pdf">Curriculum Vitae</a></p>
-                </div>
+                  <div class="col-xs-12 col-md-4">
+                      <img src="assets\img\ricardosoto.JPEG" title="Ricardo Soto's profile pic" style="width: 100%; padding-bottom: 1em;">
+                  </div>
             
-                  <div class="col-md-6 col-sm-6 col-xs-5">
-                  <p>I am an Assistant Professor of <a href="https://statistics.fas.harvard.edu/">Statistics</a> and Affiliate in <a href="https://www.seas.harvard.edu/computer-science">Computer Science</a> at Harvard University, where I study high-dimensional inference and statistical machine learning. </p>
+                  <div class="col-xs-12 col-md-6">
+                    <p>
+                      Soy Profesor Titular de Ingeniería Informática y actualmente Director de la <a href="https://www.inf.ucv.cl/" target="_blank">Escuela de Ingeniería Informática</a>
+                      de la <a href="https://www.pucv.cl/" target="_blank">Pontificia Universidad Católica de Valparaíso</a>. En 2003, recibí el título de Ingeniero civil en Informática de la misma escuela y 
+                      en 2009, finalicé mi doctorado en Informática en la <a href="https://www.univ-nantes.fr/" target="_blank">Universidad de Nantes, Francia</a>.
+                    </p>
             
-                  <p>In addition to my methodological and theoretical work, I collaborate with domain experts to apply my work to scientific fields including genetics, political science, and climatology, and I run the <a href="https://statistics.fas.harvard.edu/harvard-statistics-consulting-service">Harvard Statistical Consulting Service</a> where I supervise PhD students advising hundreds of researchers per year.</p>
-            
-            
+                    <p>
+                      Las áreas de interés de mis investigaciones incluyen Metaheurísticas, Búsqueda Autónoma,
+                      Machine Learning y Programación por Restricciones. En este contexto, he publicado más de <a href="#seccion-publicaciones">300
+                      artículos científicos</a> en distintas conferencias internacionales y revistas, varios de estos artículos han sido destacados
+                      en tópicos como Informática, Investigación de Operaciones, Inteligencia Artificial y Lenguajes de Programación.
+                      También he participado como líder y co-líder en un número importante de <a href="#seccion-proyectos">proyectos nacionales e 
+                      internacionales</a> en Informática e Inteligencia Artificial.
+                    </p>
+
+                    <p>
+                      Mi experiencia como profesor involucra cursos como Investigación de Operaciones, Optimización Combinatorial,
+                      Programación por Restricciones, Metaheurísticas, Estructuras de Datos, Programación Lógica,
+                      Teoría Autómata y Diseño de Compilador. También he supervisado más de <a href="#seccion-estudiantes">80 estudiantes de Ingeniería, Magíster y Doctorado</a>,
+                      los que en su gran mayoría han participado en mis proyectos de investigación.
+                    </p>
+                 
                   </div>
             </div>
-      
+    
             
             <div class="col-md-12 col-sm-12 col-xs-12">
       
-            <h3>Contact</h3>
-          
-            <p>
-          Av. Brasil 2241<br>
-          Valparaíso, MA 4059<br>
-          <a href="mailto:ricardo.soto@pucv.cl" style="">ricardo.soto@pucv.cl</a>
-            </p>
+              <h3>Contacto</h3>
+            
+              <p>
+                Av. Brasil 2241<br>
+                Valparaíso, MA 4059<br>
+                <a href="mailto:ricardo.soto@pucv.cl">ricardo.soto@pucv.cl</a>
+              </p>
+
             </div>
           
-      
-      
-            
-      
-          </div>
         </div> 
         <!-- end of page content && container -->
 
+        <span id="seccion-cursos" style="padding: 1em;"></span>
         <br>
 
         <!-- page content -->
-        <div class="container" id="seccion-cursos">
-          <h1>Courses</h1>
+        <div class="container">
+          <h1>Cursos</h1>
+          <p>Aquí puede encontrar los cursos que imparto en la facultad.</p>
           <p>curso1</p>
           <p>curso2</p>
         </div>
         <!-- end of page content && container -->
 
-        <br>
-
-        <!-- page content -->
-        <div class="container" id="seccion-estudiantes">
-          <h1>Students</h1>
-          <h2>Alumni</h2>
-          <p>Pepe Rojas</p>
-          <p>Armando Casas</p>
-        </div>
-        <!-- end of page content && container -->
-
+        <span id="seccion-estudiantes" style="padding: 1em;"></span>
         <br>
 
         <!-- page content -->
         <div class="container">
-          <h1 id="seccion-publicaciones">Publications</h1>
+          <h1>PhD. Alumni</h1>
+
+          <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <p>Álvaro Gómez, PhD.</p>
+              <p>Nicolas Caselli, PhD.</p>
+              <p>Cristian Galleguillos, PhD.</p>
+              <!-- <p>NOMBRE ALUMNO, PhD.</p> -->             
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <p>Boris Almonacid, PhD.</p>
+              <p>Francisco González, PhD.</p>
+              <!-- <p>NOMBRE ALUMNO, PhD.</p> -->
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <p>Emanuel Vega, PhD.</p>
+              <p>Rodrigo Olivares, PhD.</p>
+              <!-- <p>NOMBRE ALUMNO, PhD.</p> -->
+            </div>
+
+          </div>
+        </div>
           
-          <p>https://dblp.org/pid/41/5788.html</p>
-          <p>https://scholar.google.cl/citations?user=iC1zxr4AAAAJ&hl=en</p>
-          <p>https://pure.pucv.cl/en/persons/ricardo-javier-soto-de-giorgis</p>
+        <div class="container">
+          <h1>Masters Alumni</h1>
+          <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <details>
+                <summary>2013</summary>
+                <ul>
+                  <li>Rodrigo Muñoz.</li>
+                  <li>Boris Almonacid.</li>
+                </ul>
+              </details>
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <details>
+                <summary>2015</summary>
+                <ul>
+                  <li>Rodrigo Herrera.</li>
+                  <li>Rodrigo Olivares.</li>
+                </ul>
+              </details>
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <details>
+                <summary>2016</summary>
+                <ul>
+                  <li>Emanuel Vega.</li>
+                  <li>Sebastián Lizama.</li>
+                  <li>Jorge Barraza.</li>
+                  <li>José Viches.</li>
+                  <li>Jaqueline Lama.</li>
+                  <li>Carlos Castillo.</li>
+                  <li>Nicolás Fernández.</li>
+                </ul>
+              </details>
+            </div>
+          </div> 
+  
+          <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <details>
+                <summary>2017</summary>
+                <ul>
+                  <li>Ignacio Figueroa.</li>
+                  <li>Jaime Romero.</li>
+                  <li>Héctor Ortega.</li>
+                  <li>César Carrasco.</li>
+                </ul>
+              </details>
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <details>
+                <summary>2018</summary>
+                <ul>
+                  <li>Francisco González.</li>
+                  <li>Sebastián Matus de la Parra.</li>
+                  <li>Angelo Aste.</li>
+                  <li>Kevin Aballay.</li>
+                  <li>Pablo Camacho.</li>
+                  <li>Diego Hidalgo.</li>
+                </ul>
+              </details>
+            </div>
+
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <details>
+                <summary>2019</summary>
+                <ul>
+                  <li>Francisco González Molina.</li>
+                </ul>
+              </details>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <details>
+                <summary>2020</summary>
+                <ul>
+                  <li>Sergio Valdivia Castro.</li>
+                  <li>Oscar Carrasco Vera.</li>
+                  <li>Mauricio Castillo del Pino.</li>
+                </ul>
+              </details>
+            </div>
+
+            <!-- INGRESAR NUEVO ALUMNO DE MAGISTER -->
+
+      <!--  <div class="col-md-3 col-sm-12 col-xs-12">
+              <details>
+                <summary>202X</summary>
+                <ul>
+                  <li>Nombre-alumno1.</li>
+                  <li>Nombre-alumno2.</li>
+                </ul>
+              </details>
+            </div> -->
+          </div>
+
+        </div>
+        <!-- end of page content && container -->
+
+        <span id="seccion-publicaciones" style="padding: 1em;"></span>
+        <br>
+
+        <!-- page content -->
+        <div class="container">
+          <h1 id="">Publicaciones</h1>
+          <p>
+            Puede acceder a las siguientes bibliotecas académicas para revisar mis publicaciones.
+          </p>
+
+          <div class="row">
+              <div class="col-md-3 col-sm-3 col-6">
+                <a href="https://pure.pucv.cl/en/persons/ricardo-javier-soto-de-giorgis" title="Go to Pure PUCV" target="_blank">
+                  <img src="assets\img\pure_logo.png" class = "publishers-logo" alt="Go to Pure PUCV">
+                </a>
+              </div>
+              
+              <div class="col-md-3 col-sm-3 col-6">
+                <a href="https://scholar.google.cl/citations?user=iC1zxr4AAAAJ&hl=en" title="Go to Google Scholar" target="_blank">
+                  <img src="assets\img\google-scholar-logo.png" class = "publishers-logo" alt="Go to Google Scholar">
+                </a>
+              </div>
+              
+              <div class="col-md-3 col-sm-3 col-6">
+                <a href="https://dblp.org/pid/41/5788.html" title="Go to dblp" target="_blank">
+                  <img src="assets\img\DBLP_Logo_320x120.png" class = "publishers-logo" alt="Go to dblp">
+                </a>
+              </div>
+          </div>
+          
+          
+          
+          <p></p>
           
         </div>
         <!-- end of page content && container -->
 
+        <span id="seccion-proyectos" style="padding: 1em;"></span>
         <br>
 
         <!-- page content -->
         <div class="container">
 
-          <h1 id="seccion-proyectos">Projects</h1>
+          <h1>Proyectos</h1>
           
           <div>
             <ol>
@@ -172,38 +343,44 @@
               <li value="10">
                 <p>2016-2019, Principal Investigator, FONDECYT Regular 1160455, CONICYT. On-line autonomous search for recent bio-inspired metaheuristics.</p>
               </li>
-              <li value="9">
-                <p>2016-2019, Principal Investigator, DI Regular 209.757/2016 MOD: FONDECYT Regular, Vicerrectoría de Investigación y Estudios Avanzados, PUCV. On-line autonomous search for recent bio-inspired metaheuristics.</p>
-              </li>
-              <li value="8">
-                <p>2014-2016, Co-Investigator, FONDECYT Regular 1140897, CONICYT. An Autonomous Search System to Hybrid Constraint Solver Cooperation.</p>
-              </li>
-              <li value="7">
-                <p>2013-2014, Principal Investigator, FONDECYT Iniciación 11130459, CONICYT. Adaptive Enumeration and Propagation in Constraint Programming.:</p>
-              </li>
-              <li value="6">
-                <p>2013-2014, Principal Investigator, DI Regular 209.752/2013 MOD: FONDECYT Iniciación, Vicerrectoría de Investigación y Estudios Avanzados, PUCV. Adaptive Enumeration and Propagation in Constraint Programming.</p>
-              </li>
-              <li value="5">
-                <p>2013, Principal Investigator, DI Regular 209.751/2013 MOD: Puntaje de corte, Vicerrectoría de Investigación y Estudios Avanzados, PUCV. Extending the Architecture for Autonomous Search in Constraint Programming.</p>
-              </li>
-              <li value="4">
-                <p>2012-2013, Co-Investigator, INRIA associate team, INRIA, France. BANANAS: Automated design and autonomous control of hybrid solver cooperations.</p>
-              </li>
-              <li value="3">
-                <p>2012, Co-Investigator, PUCV/INF-INV-03 2012, Escuela de Ingeniería Informática, PUCV. Diseño e Implementación de un Solver basado en Búsqueda Autónoma para la Resolución de Problemas Combinatoriales.</p>
-              </li>
-              <li value="2">
-                <p>2012, Principal Investigator, PUCV/INF-INV-02 2012, Escuela de Ingeniería Informática, PUCV. Clasificadores de Estrategias para Búsqueda Autónoma.</p>
-              </li>
-              <li value="1">
-                <p>2011, Principal Investigator, DI Regular 037.350/2011, Vicerrectoría de Investigación y Estudios Avanzados, PUCV. Hacia el desarrollo de un lenguaje estandar para la programación con restricciones.</p>
-              </li>
-              
+
+              <span id="more-proyectos" style="display: none;">
+                <li value="9">
+                  <p>2016-2019, Principal Investigator, DI Regular 209.757/2016 MOD: FONDECYT Regular, Vicerrectoría de Investigación y Estudios Avanzados, PUCV. On-line autonomous search for recent bio-inspired metaheuristics.</p>
+                </li>
+                <li value="8">
+                  <p>2014-2016, Co-Investigator, FONDECYT Regular 1140897, CONICYT. An Autonomous Search System to Hybrid Constraint Solver Cooperation.</p>
+                </li>
+                <li value="7">
+                  <p>2013-2014, Principal Investigator, FONDECYT Iniciación 11130459, CONICYT. Adaptive Enumeration and Propagation in Constraint Programming.:</p>
+                </li>
+                <li value="6">
+                  <p>2013-2014, Principal Investigator, DI Regular 209.752/2013 MOD: FONDECYT Iniciación, Vicerrectoría de Investigación y Estudios Avanzados, PUCV. Adaptive Enumeration and Propagation in Constraint Programming.</p>
+                </li>
+                <li value="5">
+                  <p>2013, Principal Investigator, DI Regular 209.751/2013 MOD: Puntaje de corte, Vicerrectoría de Investigación y Estudios Avanzados, PUCV. Extending the Architecture for Autonomous Search in Constraint Programming.</p>
+                </li>
+                <li value="4">
+                  <p>2012-2013, Co-Investigator, INRIA associate team, INRIA, France. BANANAS: Automated design and autonomous control of hybrid solver cooperations.</p>
+                </li>
+                <li value="3">
+                  <p>2012, Co-Investigator, PUCV/INF-INV-03 2012, Escuela de Ingeniería Informática, PUCV. Diseño e Implementación de un Solver basado en Búsqueda Autónoma para la Resolución de Problemas Combinatoriales.</p>
+                </li>
+                <li value="2">
+                  <p>2012, Principal Investigator, PUCV/INF-INV-02 2012, Escuela de Ingeniería Informática, PUCV. Clasificadores de Estrategias para Búsqueda Autónoma.</p>
+                </li>
+                <li value="1">
+                  <p>2011, Principal Investigator, DI Regular 037.350/2011, Vicerrectoría de Investigación y Estudios Avanzados, PUCV. Hacia el desarrollo de un lenguaje estandar para la programación con restricciones.</p>
+                </li>
+
+              </span>
+              <button onclick="myFunction(this.id)" id="showBtnProy" class="showBtn">Mostrar más</button>              
             </ol>
+
+            
           </div>
 
-          <h4>Journal Referee</h4>
+          <h4>Como evaluador en revistas</h4>
             
           <div>
             <ol>
@@ -216,6 +393,8 @@
               <li value="7">
                 <p>Computers & Operations Research, Elsevier [Impact factor 2014: 1.861; OPERATIONS RESEARCH & MANAGEMENT SCIENCE, Q1]</p>
               </li>
+
+              <span id="more-revistas" style="display: none;">
               <li value="6">
                 <p>Expert Systems with Applications, Elsevier [Impact factor 2014: 2.24; OPERATIONS RESEARCH & MANAGEMENT SCIENCE, Q1]</p>
               </li>
@@ -234,11 +413,13 @@
               <li value="1">
                 <p>Sensors, MDPI - Open Access Publishing [Impact factor 2014: 2.245; INSTRUMENTS & INSTRUMENTATION, Q1]</p>
               </li>
-              
+              </span>
+
+              <button onclick="myFunction(this.id)" id="showBtnMagazine" class="showBtn">Mostrar más</button> 
             </ol>
           </div>
 
-          <h4>Program Committee Member</h4>
+          <h4>Como miembro del comité</h4>
             
           <div>
             <ol>
@@ -251,80 +432,83 @@
               <li value="24">
                 <p>2016, Program Committee Member, 18th International Conference on Enterprise Information Systems (ICEIS).</p>
               </li>
-              <li value="23">
-                <p>2016, Program Committee Member, 19th Iberoamerican Conference on Software Engineering (CIbSE-SET).</p>
-              </li>
-              <li value="22">
-                <p>2016, Program Committee Member, XXXV International Conference of the Chilean Computer Science Society (SCCC).</p>
-              </li>
-              <li value="21">
-                <p>2015, Chair, XXXIV International Conference of the Chilean Computer Science Society (SCCC).</p>
-              </li>
-              <li value="20">
-                <p>2015, Program Committee Member, 29th AAAI Conference on Artificial Intelligence (AAAI).</p>
-              </li>
-              <li value="19">
-                <p>2015, Program Committee Member, 2nd Latin American School on Software Engineering (ELA-ES 2015).</p>
-              </li>
-              <li value="18">
-                <p>2015, Program Committee Member, 18th Iberoamerican Conference on Software Engineering (CIbSE-SET).</p>
-              </li>
-              <li value="17">
-                <p>2015, Program Committee Member, 17th International Conference on Enterprise Information Systems (ICEIS).</p>
-              </li>
-              <li value="16">
-                <p>2015, Program Committee Member, Constraint Solving and Programming and Knowledge Representation Track in 30th ACM Symposium On Applied Computing (SAC).</p>
-              </li>
-              <li value="15">
-                <p>2014, Session Chair, 20th Conference of the International Federation of Operational Research Societies (IFORS).</p>
-              </li>
-              <li value="14">
-                <p>2014, Program Committee Member, Workshop on Combinatorial Search (IWoCS) in conjunction with the 14th edition of the Ibero-American Conference on Artificial Intelligence (IBERAMIA).</p>
-              </li>
-              <li value="13">
-                <p>2014, Program Committee Member, 6th IEEE International Conference On Adaptive Science & Technology (ICAST).</p>
-              </li>
-              <li value="12">
-                <p>2014, Program Committee Member, 5th International Conference on Computational Logistics (ICCL).</p>
-              </li>
-              <li value="11">
-                <p>2014, Program Committee Member, 17th Iberoamerican Conference on Software Engineering (CIbSE).</p>
-              </li>
-              <li value="10">
-                <p>2014, Program Committee Member, 16th International Conference on Enterprise Information Systems (ICEIS).</p>
-              </li>
-              <li value="9">
-                <p>2014, Program Committee Member, Constraint Solving and Programming Track in 29th ACM Symposium On Applied Computing (SAC).</p>
-              </li>
-              <li value="8">
-                <p>2013, Program Committee Member, 10th Chilean Conference on Operational Research (OPTIMA).</p>
-              </li>
-              <li value="7">
-                <p>2012, Program Committee Member, 11th Mexican International Conference on Artificial Intelligence (MICAI).</p>
-              </li>
-              <li value="6">
-                <p>2012, Program Committee Member, 31th International Conference of the Chilean Computer Science Society (SCCC).</p>
-              </li>
-              <li value="5">
-                <p>2012, Program Committee Member, Chilean Doctoral Meeting in Computer Science (ET).</p>
-              </li>
-              <li value="4">
-                <p>2012, Chair, 24th Chilean Meeting in Computer Science (ECC).</p>
-              </li>
-              <li value="3">
-                <p>2011, Program Committee Member, 30th International Conference of the Chilean Computer Science Society (SCCC).</p>
-              </li>
-              <li value="2">
-                <p>2011, Program Committee Member, 3rd Workshop on Agents and Collaborative Systems (WASC).</p>
-              </li>
-              <li value="1">
-                <p>2010, Program Committee Member, 2nd Workshop on Agents and Collaborative Systems (WASC).</p>
-              </li>
-              
+              <span id="more-comite" style="display: none;">
+
+                <li value="23">
+                  <p>2016, Program Committee Member, 19th Iberoamerican Conference on Software Engineering (CIbSE-SET).</p>
+                </li>
+                <li value="22">
+                  <p>2016, Program Committee Member, XXXV International Conference of the Chilean Computer Science Society (SCCC).</p>
+                </li>
+                <li value="21">
+                  <p>2015, Chair, XXXIV International Conference of the Chilean Computer Science Society (SCCC).</p>
+                </li>
+                <li value="20">
+                  <p>2015, Program Committee Member, 29th AAAI Conference on Artificial Intelligence (AAAI).</p>
+                </li>
+                <li value="19">
+                  <p>2015, Program Committee Member, 2nd Latin American School on Software Engineering (ELA-ES 2015).</p>
+                </li>
+                <li value="18">
+                  <p>2015, Program Committee Member, 18th Iberoamerican Conference on Software Engineering (CIbSE-SET).</p>
+                </li>
+                <li value="17">
+                  <p>2015, Program Committee Member, 17th International Conference on Enterprise Information Systems (ICEIS).</p>
+                </li>
+                <li value="16">
+                  <p>2015, Program Committee Member, Constraint Solving and Programming and Knowledge Representation Track in 30th ACM Symposium On Applied Computing (SAC).</p>
+                </li>
+                <li value="15">
+                  <p>2014, Session Chair, 20th Conference of the International Federation of Operational Research Societies (IFORS).</p>
+                </li>
+                <li value="14">
+                  <p>2014, Program Committee Member, Workshop on Combinatorial Search (IWoCS) in conjunction with the 14th edition of the Ibero-American Conference on Artificial Intelligence (IBERAMIA).</p>
+                </li>
+                <li value="13">
+                  <p>2014, Program Committee Member, 6th IEEE International Conference On Adaptive Science & Technology (ICAST).</p>
+                </li>
+                <li value="12">
+                  <p>2014, Program Committee Member, 5th International Conference on Computational Logistics (ICCL).</p>
+                </li>
+                <li value="11">
+                  <p>2014, Program Committee Member, 17th Iberoamerican Conference on Software Engineering (CIbSE).</p>
+                </li>
+                <li value="10">
+                  <p>2014, Program Committee Member, 16th International Conference on Enterprise Information Systems (ICEIS).</p>
+                </li>
+                <li value="9">
+                  <p>2014, Program Committee Member, Constraint Solving and Programming Track in 29th ACM Symposium On Applied Computing (SAC).</p>
+                </li>
+                <li value="8">
+                  <p>2013, Program Committee Member, 10th Chilean Conference on Operational Research (OPTIMA).</p>
+                </li>
+                <li value="7">
+                  <p>2012, Program Committee Member, 11th Mexican International Conference on Artificial Intelligence (MICAI).</p>
+                </li>
+                <li value="6">
+                  <p>2012, Program Committee Member, 31th International Conference of the Chilean Computer Science Society (SCCC).</p>
+                </li>
+                <li value="5">
+                  <p>2012, Program Committee Member, Chilean Doctoral Meeting in Computer Science (ET).</p>
+                </li>
+                <li value="4">
+                  <p>2012, Chair, 24th Chilean Meeting in Computer Science (ECC).</p>
+                </li>
+                <li value="3">
+                  <p>2011, Program Committee Member, 30th International Conference of the Chilean Computer Science Society (SCCC).</p>
+                </li>
+                <li value="2">
+                  <p>2011, Program Committee Member, 3rd Workshop on Agents and Collaborative Systems (WASC).</p>
+                </li>
+                <li value="1">
+                  <p>2010, Program Committee Member, 2nd Workshop on Agents and Collaborative Systems (WASC).</p>
+                </li>
+              </span>
+              <button onclick="myFunction(this.id)" id="showBtnComite" class="showBtn">Mostrar más</button>
             </ol>
           </div>
 
-          <h4>Other activities</h4>
+          <h4>Otras actividades</h4>
 
           <div>
             <ol>
@@ -343,12 +527,52 @@
           
         </div>
         <!-- end of page content && container -->
+
+        <span id="seccion-contacto" style="padding: 1em;"></span>
+        <br>
+
+        <!-- page content -->
+        <div class="container">
+
+        <h1>Contacto</h1>
+
+          <p>Durante mi jornada me encuentro frecuentemente en actividades académicas o haciendo clases, por lo que sugiero coordinar previamente las reuniones mediante un correo electrónico.</p>
+          
+          <p>Puede enviarme un correo a <a href="mailto:ricardo.soto@pucv.cl">ricardo.soto@pucv.cl</a></p>   
+
+          <p>Mi oficina se encuentra ubicada en la Escuela de Ingeniería Informática; en Avenida Brasil #2241, Valparaíso, Chile.</p>
+      
+          <p style="text-align: center;">
+            <a href="https://goo.gl/maps/eHdUCx1aezS7TwoH9" target="_blank" alt="">Encuentre la Escuela <strong>aquí.</strong></a>
+          </p>
+        </div>
+        <!-- end of page content && container -->
+
+        <footer>
+
+          <p>Dr. Ricardo Soto de Giorgis</p>
+          <a href="#">Volver al Inicio</a>
+          <hr>
+          <p style="font-size: small;">Los derechos de autor de los íconos de Pure, Google Scholar y dblp pertenecen a estos.</p>
+          <p style="font-size: small;">Última modificación: Septiembre, 2022.</p>
+        </footer>
     </body>
 
     <!-- bootstrap scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
+
+    <!-- back to top button script and html -->
+    <button onclick="topFunction()" id="back-to-top-btn" title="Volver al inicio"><i class='bi-caret-up-fill'></i></button>
+    <script src="assets\js\backtotop.js"></script>
+
+    <!-- showmore script -->
+    <script src="assets\js\showmore.js"></script>
+    
+    <!-- hide collapse navbar on click -->
+    <script src="assets\js\hidecollapse.js"></script>
 
 </html>
