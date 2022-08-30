@@ -497,6 +497,22 @@
       cursor: pointer;
     }
 
+    .showBtn {
+      text-align: center;
+      font-size: large;
+      border-radius: 1.5cm;
+      border: 2px solid #42a3ca;
+      padding: 0.5em;
+      background-color: #42a3ca34;
+      color: rgb(0, 0, 0);
+      transition-duration: 0.4s;
+    }
+
+    .showBtn:hover {
+      background-color: #42a3cabe;
+      color: rgb(255, 255, 255);
+    }
+
     /**
    * fade in back to top btn
    */
