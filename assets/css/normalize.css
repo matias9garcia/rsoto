@@ -439,10 +439,19 @@
     }
 
     .publishers-logo {
-      width:  250px;
+      width:  12em;
       height: auto;
       object-fit: cover;
       padding: 1em;
+    }
+
+    @media all and (min-width:0px) and (max-width: 575px) {
+      .publishers-logo {
+        width:  10em;
+        height: auto;
+        object-fit: cover;
+        padding: 1em;
+      }
     }
 
     .publishers-logo:hover {
