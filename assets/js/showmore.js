@@ -1,56 +1,18 @@
 const [html] = document.getElementsByTagName("html")
 const lang = html.getAttribute("lang");
 
-function myFunction() {
-    
-    var moreText = document.getElementById("more-proyectos");
-    var btnText = document.getElementById("showBtnProy");
-  
-    if (moreText.style.display === "none") {
-      moreText.style.display = "inline";
-      if(lang == "es"){
-        btnText.innerHTML = "Mostrar menos"; 
-      }else if(lang == "en"){
-        btnText.innerHTML = "Read less"; 
-      }
-      
-    } else {
-        if(lang == "es"){
-            btnText.innerHTML = "Mostrar más"; 
-        }else if(lang == "en"){
-            btnText.innerHTML = "Read more"; 
-        }
-      moreText.style.display = "none";
-    }
-  }
+  function myFunction(id) {
 
-  function myFunction2() {
-    
-    var moreText = document.getElementById("more-revistas");
-    var btnText = document.getElementById("showBtnMagazine");
-  
-    if (moreText.style.display === "none") {
-      moreText.style.display = "inline";
-      if(lang == "es"){
-        btnText.innerHTML = "Mostrar menos"; 
-      }else if(lang == "en"){
-        btnText.innerHTML = "Read less"; 
-      }
-      
-    } else {
-        if(lang == "es"){
-            btnText.innerHTML = "Mostrar más"; 
-        }else if(lang == "en"){
-            btnText.innerHTML = "Read more"; 
-        }
-      moreText.style.display = "none";
-    }
-  }
+    var btnText = document.getElementById(id);
+    var moreText;
 
-  function myFunction3() {
-    
-    var moreText = document.getElementById("more-comite");
-    var btnText = document.getElementById("showBtnComite");
+    if(id == "showBtnProy"){
+      moreText = document.getElementById("more-proyectos");
+    }else if(id == "showBtnMagazine"){
+      moreText = document.getElementById("more-revistas");
+    }else if(id == "showBtnComite"){
+      moreText = document.getElementById("more-comite");
+    }
   
     if (moreText.style.display === "none") {
       moreText.style.display = "inline";
