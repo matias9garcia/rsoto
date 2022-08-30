@@ -485,8 +485,16 @@
       color: black;
     }
 
-    summary{
+    details {
+      padding: 0.5em;
+    }
+
+    details > summary {
       padding: 1em;
+      background-color: #eeeeee;
+      border: none;
+      box-shadow: 1px 1px 2px #bbbbbb;
+      cursor: pointer;
     }
 
     /**
