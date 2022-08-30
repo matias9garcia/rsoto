@@ -368,7 +368,7 @@
         background-color: #f8f8f8;
         border-color: #e7e7e7;
         padding: 0px;
-
+        z-index: 99;
         position: fixed;
         width: 100%;
         top: 0;
@@ -517,8 +517,8 @@
       transition: .25s transform ease;
     }
 
-    details summary::focus {
-      border-color: black;
+    details summary:hover {
+      border: 1px solid rgb(24, 24, 24);
     }
 
     summary {
@@ -528,6 +528,7 @@
       padding-left: 2.2rem;
       position: relative;
       cursor: pointer;
+      border: 1px solid transparent;
     }
 
     details[open] > summary::before {
