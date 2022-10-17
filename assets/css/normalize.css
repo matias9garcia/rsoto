@@ -567,13 +567,29 @@
     }
 
     /**
-   * fade in back to top btn
-   */
-    @keyframes fade-in {
-      from {
-        opacity: 0%;
+    * fade in back to top btn
+    */
+      @keyframes fade-in {
+        from {
+          opacity: 0%;
+        }
+        to {
+          opacity: 100%;
+        }
       }
-      to {
-        opacity: 100%;
+
+      #linkedin-icon {
+        size: 5rem;
       }
-    }
+
+      .student span {
+        display: none;
+        position: relative;
+        padding-left: 1.5rem;  
+      }
+      
+      .student:hover span {
+        display: inline-block; 
+        float: right; 
+        padding-right: 4rem;
+      }
