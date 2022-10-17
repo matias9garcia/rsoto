@@ -407,6 +407,21 @@
         border-bottom: 1px solid #eee;
     }
 
+    .ul-research {
+      padding-left: 30px;
+      text-align: left;
+      margin-block-start: 1.5em;
+      margin-block-end: 1.5em;
+    }
+
+    .ul-research li {
+      margin-left: 0.5cm;
+    }
+
+    .ul-research li p {
+      margin-left: 0.5cm;
+    }
+
     ol {
       padding-left: 30px;
       text-align: left;
