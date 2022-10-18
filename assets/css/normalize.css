@@ -578,18 +578,7 @@
         }
       }
 
-      #linkedin-icon {
-        size: 5rem;
-      }
-
-      .student span {
-        display: none;
-        position: relative;
-        padding-left: 1.5rem;  
-      }
-      
-      .student:hover span {
-        display: inline-block; 
+      .student-name .span-linkedin-icon {
         float: right; 
         padding-right: 4rem;
       }
