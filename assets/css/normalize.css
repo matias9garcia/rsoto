@@ -578,6 +578,21 @@
         }
       }
 
+      .curso-header {
+        background-color: #eeeeee;
+        padding: 0.5rem;
+        border-radius: 5;
+      }
+
+      .curso-id {
+        width: 5rem;
+      }
+
+      .curso-header h2 {
+        float: left;
+        text-align: justify;
+      }
+
       .student-name .span-linkedin-icon {
         float: right; 
         padding-right: 3.5rem;
