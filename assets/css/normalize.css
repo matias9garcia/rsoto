@@ -608,3 +608,23 @@
         float: right; 
         padding-right: 3.5rem;
       }
+
+      .curso-btn{
+        padding: 1rem;
+      }
+
+      .curso-btn button{
+        text-align: left;
+        font-size: large;
+        border-radius: 0.5cm;
+        border: 2px solid #42a3ca;
+        padding: 0.5em;
+        background-color: #42a3ca34;
+        color: rgb(0, 0, 0);
+        transition-duration: 0.4s;
+      }
+  
+      .curso-btn button:hover {
+        background-color: #42a3cabe;
+        color: rgb(255, 255, 255);
+      }
