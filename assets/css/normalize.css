@@ -25,6 +25,9 @@
     margin: 0;
     font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
     font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   
   /**
@@ -382,9 +385,9 @@
         background-color: #e7e7e7;
     }
 
-    .container {
+    /* .container {
         margin: auto;
-    }
+    } */
 
     .navbar-collapse {
       align-items: center;
@@ -502,7 +505,7 @@
       padding-bottom: 1em;
       background-color: rgb(98, 158, 182);
       color: white;
-      display: block;
+      margin-top: auto;
     }
 
     footer a{
