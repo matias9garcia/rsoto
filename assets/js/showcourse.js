@@ -62,7 +62,17 @@ const lang = html.getAttribute("lang");
     } else if (id == "showBtnDII-711"){
         moreText = document.getElementById("span-dii-711");
     } else if (id == "showBtnICI-4242"){
-      moreText = document.getElementById("span-ici-4242");
+        moreText = document.getElementById("span-ici-4242");
+
+        // hide other courses REWORK
+        hideRest = document.getElementById("span-inf-3144");
+        hideRest.style.display = "none";
+    } else if (id == "showBtnINF-3144"){
+      moreText = document.getElementById("span-inf-3144");
+
+      // hide other courses REWORK
+      hideRest = document.getElementById("span-ici-4242");
+      hideRest.style.display = "none";
   }
 
 
