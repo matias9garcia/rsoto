@@ -59,7 +59,10 @@ const lang = html.getAttribute("lang");
 
         hideRest = document.getElementById("span-mii-774");
         hideRest.style.display = "none";
+    } else if (id == "showBtnDII 711"){
+        moreText = document.getElementById("span-dii-711");
     }
+
 
 
     if (moreText.style.display === "none") {
