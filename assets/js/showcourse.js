@@ -51,7 +51,6 @@ const lang = html.getAttribute("lang");
     if (spanArray.length > 0){
       for (let i = 0; i < spanArray.length; i++) {
         spanArray[i].style.display='none';
-        console.log("funciona");
       }
     }
     
