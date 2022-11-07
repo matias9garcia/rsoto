@@ -72,7 +72,7 @@ const lang = html.getAttribute("lang");
 
         // hide other courses REWORK
         hideRest = document.getElementById("span-ici-4242");
-        hideRest.style.display = "none";
+        // hideRest.style.display = "none";
     }
 
 
