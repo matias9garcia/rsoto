@@ -595,13 +595,8 @@
         color: black;
       }
 
-      .curso-id {
-        width: 5rem;
-      }
-
-      .curso-header th h2 {
-        float: left;
-        text-align: justify;
+      .curso-header a h2 {
+        text-align: center;
       }
 
       .student-name .span-linkedin-icon {
