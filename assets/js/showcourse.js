@@ -68,12 +68,12 @@ const lang = html.getAttribute("lang");
         hideRest = document.getElementById("span-inf-3144");
         hideRest.style.display = "none";
     } else if (id == "showBtnINF-3144"){
-      moreText = document.getElementById("span-inf-3144");
+        moreText = document.getElementById("span-inf-3144");
 
-      // hide other courses REWORK
-      hideRest = document.getElementById("span-ici-4242");
-      hideRest.style.display = "none";
-  }
+        // hide other courses REWORK
+        hideRest = document.getElementById("span-ici-4242");
+        hideRest.style.display = "none";
+    }
 
 
 
