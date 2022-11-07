@@ -9,70 +9,31 @@ const lang = html.getAttribute("lang");
 
     // course page
     if(id == "showBtnMII-748"){
+        hideSpans();
         moreText = document.getElementById("span-mii-748");
 
-        // hide other courses REWORK
-        hideRest = document.getElementById("span-mii-771");
-        hideRest.style.display = "none";
-
-        hideRest = document.getElementById("span-mii-774");
-        hideRest.style.display = "none";
-
-        hideRest = document.getElementById("span-mii-779");
-        hideRest.style.display = "none";
-
     } else if( id == "showBtnMII-771"){
+        hideSpans();
         moreText = document.getElementById("span-mii-771");
 
-        // hide other courses REWORK
-        hideRest = document.getElementById("span-mii-748");
-        hideRest.style.display = "none";
-
-        hideRest = document.getElementById("span-mii-774");
-        hideRest.style.display = "none";
-
-        hideRest = document.getElementById("span-mii-779");
-        hideRest.style.display = "none";
-
     } else if( id == "showBtnMII-774"){
+        hideSpans();
         moreText = document.getElementById("span-mii-774");
 
-        // hide other courses REWORK
-        hideRest = document.getElementById("span-mii-748");
-        hideRest.style.display = "none";
-
-        hideRest = document.getElementById("span-mii-771");
-        hideRest.style.display = "none";
-
-        hideRest = document.getElementById("span-mii-779");
-        hideRest.style.display = "none";
-
     } else if ( id == "showBtnMII-779"){
+        hideSpans();
         moreText = document.getElementById("span-mii-779");
 
-        // hide other courses REWORK
-        hideRest = document.getElementById("span-mii-748");
-        hideRest.style.display = "none";
-
-        hideRest = document.getElementById("span-mii-771");
-        hideRest.style.display = "none";
-
-        hideRest = document.getElementById("span-mii-774");
-        hideRest.style.display = "none";
     } else if (id == "showBtnDII-711"){
+        hideSpans();
         moreText = document.getElementById("span-dii-711");
     } else if (id == "showBtnICI-4242"){
+        hideSpans();
         moreText = document.getElementById("span-ici-4242");
 
-        // hide other courses REWORK
-        hideRest = document.getElementById("span-inf-3144");
-        hideRest.style.display = "none";
     } else if (id == "showBtnINF-3144"){
-        moreText = document.getElementById("span-inf-3144");
-
-        // hide other courses REWORK
-        hideRest = document.getElementById("span-ici-4242");
-        // hideRest.style.display = "none";
+        hideSpans();
+        moreText = document.getElementById("span-inf-3144"); 
     }
 
 
@@ -81,4 +42,17 @@ const lang = html.getAttribute("lang");
       moreText.style.display = "inline";
       
     }
+
+  }
+
+  function hideSpans() {
+    let spanArray = [];
+    spanArray = document.getElementsByClassName('span-course');
+    if (spanArray.length > 0){
+      for (let i = 0; i < spanArray.length; i++) {
+        spanArray[i].style.display='none';
+        console.log("funciona");
+      }
+    }
+    
   }
