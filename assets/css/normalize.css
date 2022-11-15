@@ -597,12 +597,12 @@
 
       .curso-header a h2 {
         text-align: center;
-        font-size: calc(0.3rem + .9vw);
+        font-size: 1rem;
         margin-bottom: 0;
       }
       .curso-header a h4 {
         text-align: center;
-        font-size: calc(0.55rem + .3vw);
+        font-size: 0.9rem;
         margin-bottom: 0;
       }
 
